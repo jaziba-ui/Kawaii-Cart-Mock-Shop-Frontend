@@ -11,9 +11,13 @@ Designed to show **clean API integration**, **state management**, and a **soft p
 <img width="1901" height="876" alt="products" src="https://github.com/user-attachments/assets/1bcfba1a-a3ad-4dec-b001-c3b9715aeaba" />
 
 **Cart**
+
+
 <img width="557" height="797" alt="cart" src="https://github.com/user-attachments/assets/3c3caad1-a575-4196-bd5d-0f703c98a601" />
 
 **Receipt**
+
+
 <img width="737" height="557" alt="receipt" src="https://github.com/user-attachments/assets/91905532-8629-4b76-b846-c82b4c049e7e" />
 
 ## Tech Stack
