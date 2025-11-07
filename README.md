@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+<img width="1901" height="876" alt="products" src="https://github.com/user-attachments/assets/9e9fd304-cf05-44ed-9020-42f670d3e007" /># Mock E-Commerce Cart — Vibe Commerce Screening Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A minimal full-stack shopping cart application demonstrating product listing, cart management, and a mock checkout flow.  
+Designed to show **clean API integration**, **state management**, and a **soft pastel UI theme** using Tailwind.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Preview
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img width="737" height="557" alt="receipt" src="https://github.com/user-attachments/assets/91905532-8629-4b76-b846-c82b4c049e7e" />
+<img width="1901" height="876" alt="products" src="https://github.com/user-attachments/assets/1bcfba1a-a3ad-4dec-b001-c3b9715aeaba" />
+<img width="557" height="797" alt="cart" src="https://github.com/user-attachments/assets/3c3caad1-a575-4196-bd5d-0f703c98a601" />
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Frontend**
+- React (Hooks)
+- Tailwind CSS (v3.4)  
+- Fetch API (no Redux or external state libs)
 
-### `npm run build`
+**Backend**
+- Node.js + Express.js
+- In-memory cart + product catalog
+- Stateless, no database required
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Product Catalog
+- Pulls product list from backend API
+- Quantity selector + **Add to Cart**
 
-### `npm run eject`
+### Shopping Cart
+- Real-time cart updates
+- Remove items
+- Total cost always synchronized with backend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Checkout & Receipt
+- Modal collects name + email
+- Sends order to backend
+- Backend returns a generated receipt:
+  - Items purchased
+  - Total price
+  - Timestamp
+  - Receipt ID
+- Cart clears automatically after checkout
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## API Endpoints
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+| Method | Endpoint | Description |
+|-------|----------|-------------|
+| GET | `/api/products` | Fetch product list |
+| GET | `/api/cart` | Fetch current cart |
+| POST | `/api/cart` | Add / update item |
+| DELETE | `/api/cart/:id` | Remove item |
+| POST | `/api/checkout` | Generate receipt |
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Setup & Run
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Backend
+cd backend
+npm install
+npm start
 
-### Code Splitting
+arduino
+Copy code
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Server URL:
+http://localhost:4000
 
-### Analyzing the Bundle Size
+### Frontend
+cd frontend
+npm install
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+If needed:
+REACT_APP_API_BASE=http://localhost:4000
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Custom Brand Theme
 
-### Advanced Configuration
+`tailwind.config.js`
+extend: {
+colors: {
+vibe1: "#F5EEE6",
+vibe2: "#FFF8E3",
+vibe3: "#F3D7CA",
+vibe4: "#E6A4B4",
+},
+}
+Used across UI for a unified soft pastel aesthetic.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## Purpose
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project demonstrates:
+- Clean React component state flow
+- API integration with meaningful sync logic
+- UI consistency driven by design tokens (custom Tailwind palette)
+- Working checkout flow with receipt output
 
-### `npm run build` fails to minify
+Not meant for production e-commerce, but optimized for **clarity, readability, and evaluation**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## License
+MIT
