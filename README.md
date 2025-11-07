@@ -20,6 +20,19 @@ Designed to show **clean API integration**, **state management**, and a **soft p
 
 <img width="737" height="557" alt="receipt" src="https://github.com/user-attachments/assets/91905532-8629-4b76-b846-c82b4c049e7e" />
 
+
+
+## Demo (Video Walkthrough)
+
+[![Watch Demo](https://cdn.loom.com/sessions/thumbnails/b8a88377f7544797aab1c3a944f7116d-with-play.gif)](https://www.loom.com/share/b8a88377f7544797aab1c3a944f7116d)
+
+> The demo showcases:
+> - Product grid UI with soft pastel theme
+> - Cart add/remove logic synced with backend
+> - Checkout modal and generated receipt
+
+
+
 ## Tech Stack
 
 **Frontend**
