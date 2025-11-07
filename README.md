@@ -22,9 +22,9 @@ Designed to show **clean API integration**, **state management**, and a **soft p
 
 
 
-## Demo (Video Walkthrough)
+## Demo (Video)
 
-[![Watch Demo](https://cdn.loom.com/sessions/thumbnails/b8a88377f7544797aab1c3a944f7116d-with-play.gif)](https://www.loom.com/share/b8a88377f7544797aab1c3a944f7116d)
+https://www.loom.com/share/b8a88377f7544797aab1c3a944f7116d
 
 > The demo showcases:
 > - Product grid UI with soft pastel theme
